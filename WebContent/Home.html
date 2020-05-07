@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpeechToText</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/home.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="bdy">
+	<div class="login-form">
+		<h1>Relieving Form</h1>
+		<div class="form-group row" id="name">
+			<div class="col-xs-7">
+				Name <input type="text" id="nameId" class="form-control"
+					required="required">
+			</div>
+			<div class="col-xs-5">
+				<img src="mic.png" id="nameIdstart"
+					onclick="startButton(event,'nameId');" style="display: none;" /><img
+					src="listen.gif" id="nameIdstop" class="stopmic" onclick="stop()"
+					style="display: none;" />
+			</div>
+		</div>
+		<div class="form-group row" id="gpn">
+			<div class="col-xs-7">
+				GPN ID <input type="text" id="gpnId" class="form-control"
+					required="required">
+			</div>
+			<div class="col-xs-5">
+				<img src="mic.png" id="gpnIdstart"
+					onclick="startButton(event,'gpnId');" style="display: none;" /><img
+					src="listen.gif" id="gpnIdstop" onclick="stop()"
+					style="display: none;" />
+			</div>
+		</div>
+		<div class="form-group row" id="status">
+			<div class="col-xs-7">
+				Status <select class="form-control" id="statusId"><option
+						value="">Select</option>
+					<option value="single">Single</option>
+					<option value="married">Married</option>
+				</select>
+			</div>
+			<div class="col-xs-5">
+				<img src="mic.png" id="statusIdstart"
+					onclick="startButton(event,'statusId');" style="display: none;" /><img
+					src="listen.gif" id="statusIdstop" onclick="stop()"
+					style="display: none;" />
+			</div>
+		</div>
+		<div class="form-group row" id="txtComments">
+			<div class="col-xs-7">
+				Comments about organization
+				<textarea rows="3" cols="29" id="txtCommentsId"></textarea>
+			</div>
+			<div class="col-xs-5">
+				<img src="mic.png" id="txtCommentsIdstart"
+					onclick="startButton(event,'txtCommentsId');"
+					style="display: none;" /><img src="listen.gif"
+					id="txtCommentsIdstop" onclick="stop()" style="display: none;" />
+			</div>
+		</div>
+		<button class="btn btn-primary">Submit</button>
+
+
+
+	</div>
+</body>
+</html>
